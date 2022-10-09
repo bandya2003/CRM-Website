@@ -1,0 +1,38 @@
+html{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    font-size: 5mm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    box-shadow: 10px 10px 0px greenyellow;
+image-resolution: inherit;
+    padding: 40px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+head{
+    background-color: pink;
+    text-justify:inter-ideograph;
+    font-size: larger;
+}
+body{
+    
+    font-size: larger;
+    background-color:pink;
+    justify-content: center;
+    align-self: center;
+    padding: 30px 20px;
+    border:30px 20px 50px 30px green;
+    box-shadow: 30px 20px 30 px ;
+    
+}
+form{border: rgb(209, 89, 33);
+    font-size: larger;
+
+    justify-content: center;
+    align-self: center;
+    padding: 30px 20px;
+    border:30px 20px 50px 30px rgb(61, 71, 206);
+    box-shadow: 30px 20px 30 px ;
+    
+
+}
