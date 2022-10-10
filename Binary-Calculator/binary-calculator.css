@@ -1,0 +1,50 @@
+body {
+    width: 45%;
+}
+/* Result Styling  */
+#res {
+    background-color: lightgray;
+    border: solid;
+    height: 48px;
+    font-size: 20px;
+}
+
+/* Button Styling */
+#btns {
+    grid-template-columns: auto auto auto auto;
+}
+
+#btn0, #btn1 {
+    background-color: lightgreen; 
+    color: brown;
+}
+
+#btnClr, #btnEql {
+    background-color: darkgreen; 
+    color: white;
+}
+
+#btnSum, #btnSub, #btnMul, #btnDiv {
+    background-color: black;
+    color: red; 
+}
+
+#btns button {
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left;
+}
+
+@media (max-width: 1300px) {
+    body {
+        width: 70%;
+    }   
+}
+
+@media (max-width: 900px) {
+    body {
+        width: 100%;
+    }   
+}
