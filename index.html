@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Tracker</title>
+    <meta name="description" content="A simple covid-19 tracker." />
+    <meta name="robots" content="index" />
+    <link
+      rel="canonical"
+      href="https://www.covid19-indiatracker.netlify.app/"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.webp" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- typedjs -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <script>
+      // alert("Website Under Development!!! :/");
+    </script>
+  </head>
+  <body>
+    <!-- loader for splash screen -->
+    <!-- <div id="loading"></div> -->
+
+    <nav class="navbar navbar-dark bg-glass">
+      <div class="container-fluid">
+        <div class="container-fluid brand">
+          <span class="navbar-brand mb-0 h1"
+            ><img
+              style="width: auto; height: 40px; border-radius: 5px"
+              src="assets/img/logo.webp"
+              alt=""
+          /></span>
+
+          <span
+            ><a target="_blanck" href="http://www.bjbcollege.in/"><img
+              style="border-radius: 5px"
+              src="assets/img/bjb_logo.webp"
+              height="45px"
+              alt=""
+          /></a></span>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <div class="container hero-figure" id="text">
+      <div class="row">
+        <div class="col text-center">
+          <h1><p id="typed"></p></h1>
+        </div>
+      </div>
+
+      <h4 id="text">Worldwide</h4>
+      <div class="row text-center">
+        <div class="col-sm">
+          <div class="card confirmed">
+            <div class="card-body">
+              <h5 class="card-title">Confirmed</h5>
+              <p class="card-text" id="worldwide-confirmed"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card new_confirmed">
+            <div class="card-body">
+              <h5 class="card-title">New Confirmed</h5>
+              <p class="card-text" id="worldwide-new_confirmed"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card recovered">
+            <div class="card-body">
+              <h5 class="card-title">Recovered</h5>
+              <p class="card-text" id="worldwide-recovered"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card death">
+            <div class="card-body">
+              <h5 class="card-title">Death</h5>
+              <p class="card-text" id="worldwide-death"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <h4 id="text">India</h4>
+      <div class="row text-center">
+        <div class="col-sm">
+          <div class="card confirmed">
+            <div class="card-body">
+              <h5 class="card-title">Confirmed</h5>
+              <p class="card-text" id="india-confirmed"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card new_confirmed">
+            <div class="card-body">
+              <h5 class="card-title">New Confirmed</h5>
+              <p class="card-text" id="india-new_confirmed"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card recovered">
+            <div class="card-body">
+              <h5 class="card-title">Recovered</h5>
+              <p class="card-text" id="india-recovered"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card death">
+            <div class="card-body">
+              <h5 class="card-title">Death</h5>
+              <p class="card-text" id="india-death"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm">
+          <div>
+            <iframe
+              src="https://public.domo.com/cards/dJ45D"
+              width="100%"
+              height="600"
+              marginheight="0"
+              marginwidth="0"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm">
+          <div>
+            <iframe
+              src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&pickerSort=desc&pickerMetric=new_cases_smoothed_per_million&Metric=Confirmed+cases&Interval=Cumulative&Relative+to+Population=false&Align+outbreaks=false&country=~IND&hideControls=true"
+              loading="lazy"
+              style="width: 100%; height: 600px; border: 0px none"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-sm">
+          <iframe
+            src="https://public.domo.com/cards/aOm4g"
+            width="90%"
+            height="400"
+            loading="lazy"
+            marginheight="0"
+            marginwidth="0"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm">
+          <div>
+            <iframe
+              src="https://public.domo.com/cards/31O7r"
+              width="80%"
+              height="600"
+              loading="lazy"
+              marginheight="0"
+              marginwidth="0"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm">
+          <div
+            class="flourish-embed flourish-chart"
+            style="width: 100%"
+            data-src="story/767666"
+          >
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-sm">
+          <iframe
+            src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&pickerSort=desc&pickerMetric=total_cases&hideControls=true&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=false&Align+outbreaks=false&country=~IND"
+            loading="lazy"
+            style="width: 100%; height: 600px; border: 0px none"
+          ></iframe>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-sm">
+          <div
+            class="flourish-embed flourish-chart"
+            style="width: 100%"
+            data-src="story/230110"
+          >
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-sm">
+          <iframe
+            src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&pickerSort=desc&pickerMetric=total_vaccinations&Metric=People+vaccinated+%28by+dose%29&Interval=Cumulative&Relative+to+Population=true&Align+outbreaks=false&country=IND~OWID_WRL&hideControls=true"
+            loading="lazy"
+            style="width: 90%; height: 600px; border: 0px none"
+          ></iframe>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-sm">
+          <iframe
+            src="https://maps.mapmyindia.com/corona?corona_district_cases"
+            style="height: 800px; width: 90%"
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <br />
+    <div class="container" id="text">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sl No.</th>
+            <th scope="col">State</th>
+            <th scope="col" style="background-color: #f86a6a">Confirmed</th>
+            <th scope="col" style="background-color: #78f360">Recovered</th>
+            <th scope="col" style="background-color: #4b4646; color: white">
+              Death
+            </th>
+          </tr>
+        </thead>
+        <tbody id="table">
+          <tr>
+            <th scope="row">1</th>
+
+            <td>Andhra Pradesh</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+
+            <td>Arunachal Pradesh</td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+
+            <td>Assam</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+
+            <td>Bihar</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+
+            <td>Chhattisgarh</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+
+            <td>Goa</td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Gujarat</td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+
+            <td>Haryana</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+
+            <td>Himachal Pradesh</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+
+            <td>Jharkhand</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td></td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Karnataka</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+
+            <td>Kerala</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+
+            <td>Madhya Pradesh</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+
+            <td>Maharashtra</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+
+            <td>Manipur</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+
+            <td>Meghalaya</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">17</th>
+
+            <td>Mizoram</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">18</th>
+
+            <td>Nagaland</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">19</th>
+
+            <td>Odisha</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">20</th>
+
+            <td>Punjab</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">21</th>
+
+            <td>Rajasthan</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">22</th>
+
+            <td>Sikkim</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">23</th>
+
+            <td>Tamil Nadu</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">24</th>
+
+            <td>Telangana</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">25</th>
+
+            <td>Tripura</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">26</th>
+
+            <td>Uttar Pradesh</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">27</th>
+
+            <td>Uttarakhand</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">28</th>
+
+            <td>West Bengal</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">29</th>
+            <td></td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">30</th>
+            <td></td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">31</th>
+            <td></td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">32</th>
+            <td></td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">33</th>
+
+            <td>Mizoram</td>
+
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">34</th>
+            <td></td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">35</th>
+            <td></td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+          <tr>
+            <th scope="row">36</th>
+            <td></td>
+            <td style="background-color: #f86a6a"></td>
+            <td style="background-color: #78f360"></td>
+            <td style="background-color: #4b4646; color: white"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <footer class="darkmode-ignore">
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>Covid19 Tracker is a web tool made to observe the stats related to covid-19 infection. Along with India, you can observe the covid-19 infection stats of other countries and compare it with Worldwide average.</p>
+            <br>
+            <!-- <p>Made by: <a href="">Ashutosh Dash</a>& <a href="">Biswajit Dash</a></p> -->
+            <div class="social">
+              <!-- <a href=""><span class="fab fa-github"></span></a> -->
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Mishrichak , arrah (Bihar)</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+918873369374</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text"><a href="mailto:mdseraj96088@@gmail.com">mdseraj96088@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content ">
+            <form action="#" netlify>
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" name="email" required>
+              </div>
+              <div class="msg">
+                <dbhai ojee mca ro iv class="text">Message *</dbhai>
+                <textarea rows="2" name="message" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit"><a href="">Made with <i class="fas fa-heart"></i></a> | </span>
+          <span class="far fa-copyright"></span><span> 2022 All rights reserved, md seraj</span>
+        </center>
+      </div>
+    </footer>
+
+
+    <!-- spalsh screen js -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader() {
+        preloader.style.display = "none";
+      }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
