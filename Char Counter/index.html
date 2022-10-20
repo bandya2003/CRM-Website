@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammerly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Real Time Character Counter</h2>
+        <p class="para">Check Your English text ,correct your Grammer,Spelling, and punctuation errors and thank me later!!!!!</p>
+
+        <textarea id="textarea" class="textarea" maxlength="150" placeholder="Please Write Here!!" contenteditable="true"></textarea>
+        <button onclick="copyText()">Copy Texts</button>
+        <div class="counter-container">
+           <p>Total Char: <span id="total-counter">0</span></p>
+           <p>Remaining Char: <span id="remaining-counter">150</span></p> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
