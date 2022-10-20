@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.container{
+    background-color: #4abba4;
+    height: 100vh;
+}
+
+.box{
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    padding: 2rem;
+}
+
+.logo img{
+    height: 6vh;
+    margin-right: 1rem;
+}
+
+.logo h3{
+    color: #218a75;
+    letter-spacing: 1.5px;
+    font-size: 1.7rem;
+}
+
+.controll{
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+
+.controll textarea{
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 75%;
+    margin-bottom: 1.5rem;
+    resize: none;
+    border: 1px solid lightblue;
+    outline: none;
+    height: 25vh;
+    resize: none;
+    border-radius: 4px;
+}
+
+.controll textarea::-webkit-scrollbar{
+    display: none;
+}
+
+.controll button{
+    font-size: 1.1rem;
+    padding: 10px 3rem;
+    color: azure;
+    cursor: pointer;
+    background-color: #4abba4;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.container button:hover{
+    background-color: #2a947f;
+}
+
+#gif{
+    height: 12vh;
+    width: 45%;
+    margin: 1.5rem auto 0;
+    display: block;
+    display: none;
+}
