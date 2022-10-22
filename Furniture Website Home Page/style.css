@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( rgb(8, 62, 156),rgb(58, 139, 185), rgb(25, 221, 235));
+}
+
+.container1{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    font-family: sans-serif;
+}
+
+.container2{
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    margin: 0px 30px;
+}
+
+.nav li{
+    list-style: none;
+    padding: 20px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    padding: 4px;
+    border-bottom: 3px solid black;
+    border-radius: 8px;
+    background-color: rgb(29, 145, 246)
+}
+
+.img1{
+    height: 350px;
+    width: 400px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.img2{
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+.img3{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+h1{
+    color: rgb(231, 231, 231);
+    position: absolute;
+    text-align: center;
+    font-size: 80px;
+    right:100px;
+    top: 150px;
+    font-family: sans-serif;
+    
+}
+
+.btn{
+    position: absolute;
+    bottom: 30px;
+    right: 280px;
+    cursor: pointer;
+    color: white;
+    background: rgb(4, 78, 110);
+    border: 1px solid white;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 30px rgb(7, 117, 165);
+}
+
+.btn:hover{
+    color: black;
+    background:transparent;
+}
