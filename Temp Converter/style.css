@@ -1,0 +1,98 @@
+body {
+    margin: 50px;
+    font-family: Poppins;
+    background-color: #202020;
+    color: white;
+}
+
+#h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+#p {
+    text-align: center;
+}
+
+#Celsius,
+#Fahrenheit {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(77, 77, 77);
+}
+
+#input {
+    display: inline;
+    text-align: center;
+}
+
+#temp {
+    padding: 50px 0px 70px 0px;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+}
+
+#submit {
+    font-size: 15px;
+}
+
+nav {
+    text-align: right;
+    font-family: Poppins;
+}
+
+#theme {
+    padding-right: 5px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+#dark,
+#light {
+    font-size: 12px;
+    font-family: Poppins;
+    border-radius: 5px;
+}
+
+footer {
+    color: gray;
+    font-size: small;
+    padding-top: 100px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: grey;
+}
+
+@media screen and (max-width: 380px) {
+
+    #Celsius,
+    #Fahrenheit {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    #Celsius,
+    #Fahrenheit {
+        font-size: 10px;
+    }
+}
