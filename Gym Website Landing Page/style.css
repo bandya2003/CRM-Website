@@ -1,0 +1,144 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(images/gym3.jpg);
+    background-size: 100vw 140vh;
+}
+
+.box {
+    color: rgb(255, 255, 255);
+}
+
+#left {
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+#mid {
+    box-sizing: border-box;
+    display: block;
+    margin: 25px auto;
+    width: 600px;
+}
+
+#right {
+    display: inline-block;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+.navbar {
+    text-align: center;
+    list-style: none;
+    margin: auto;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 4px 20px;
+}
+
+/* .navbar li.active{
+    background-color: white;
+} */
+
+div .navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
+}
+
+.navbar li a:hover ,.navbar li a:active {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px 3px;
+    color:rgb(0, 0, 0);
+    font-weight: bolder;
+    box-shadow: 0px 0.8px 60px rgb(244, 243, 243);
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    filter: invert(100%);
+    line-height: 0px;
+    position: absolute;
+    right: 3px;
+    top: -15px;
+    box-shadow: 0px 3px 20px rgba(255, 255, 255, 0.948)
+}
+
+#left div {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Fredoka One', cursive;
+    margin: 50px auto;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px;
+    margin: 4px;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 0px 3px 20px rgba(255, 255, 255, 0.414);
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.1);
+}
+
+.container h1{
+    color:white;
+    text-align: center;
+}
+
+.container{
+    border: 1px solid white;
+    border-radius: 18px;
+    margin: 100px 70px;
+    height: 350px;
+    width: 280px;
+    box-shadow: 0px 3px 20px rgba(255, 255, 255, 0.20), 0px 3px 20px rgba(255, 255, 255, 0.22);
+}
+
+.container input{
+    display: block;
+    color:rgb(0, 0, 0);
+    margin: 8px auto;
+    width:200px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+    padding:3px;
+}
+
+.container input::before{
+    color:aquamarine;
+}
+
+h1{
+    font-size: 25px;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2px;
+}
+
+.container button{
+    display: block;
+    margin: 10px auto;
+    width: 208px;
+    font-size:15px;
+}
