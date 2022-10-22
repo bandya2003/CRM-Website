@@ -1,0 +1,39 @@
+.navBar::before{
+    height: 80%;
+}
+
+.list li a{
+    font-size: 8px;
+    padding: 4px 0px;
+}
+
+.home{
+    /* margin: 0 px 0px; */
+    position: absolute;
+    left: 0px;
+    padding: 140px;
+}
+
+.main{
+    font-size: small;
+}
+
+.container{
+    flex-direction: column;
+}
+
+.connect{
+    flex-wrap: wrap;
+}
+
+.contect-section::before{
+    height: 65%;
+}
+
+.inp{
+    width: 250px;
+}
+
+.subInp{
+    width: 270px;
+}

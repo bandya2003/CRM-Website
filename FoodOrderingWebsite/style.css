@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* logo box*/
+.logo {
+    margin: 3px 16px;
+}
+ 
+/* logo image */
+.logo img {
+    height: 50px;
+    width: 70px;
+}
+
+/* navigation bar */
+.navBar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navBar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* nav bar items box */
+div ul {
+    display: flex;
+    list-style: none;
+}
+
+/* nav bar items */
+div ul li {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* nav bar items links */
+.list li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.list li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    z-index: -1;
+    text-shadow: 3px 3px 10px rgb(99, 170, 99);
+}
+
+a.active{
+    color: aqua;
+    background-color: cornflowerblue;
+}
+
+.list li a:focus{
+    color: aqua;
+    background-color: cornflowerblue;
+}
+
+.list li:hover {
+    transform: scale(1.07);
+}
+
+/* Home section */
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(./images/bg1.jpg) no-repeat center center/cover;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.80;
+}
+
+/* home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+    height: 450px;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Courgette', cursive;
+}
+
+#myVideo {
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.78;
+    background-repeat:no-repeat;
+    transform: scale(1.2);
+  }
+
+/* main page or text area(div) of home section */
+.main{
+    font-family: 'DynaPuff', cursive;
+}
+
+/* heading of home section*/
+h1 {
+    /* text-shadow: 1px 1px rgb(255, 255, 255); */
+    font-family: 'DynaPuff', cursive;
+    font-size: 55px;
+}
+
+/* button of main page*/
+.btn {
+    margin: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(242, 66, 66);
+    box-shadow: 2px 2px 20px rgb(255, 25, 0); 
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+}
+
+.btn:hover {
+    transform: scale(1.09);
+    background-color: rgb(227, 52, 52);
+}
+
+/* services section */
+#services {
+    margin-top: 65px;
+    box-sizing: border-box;
+    background: url(./images/bg3.jpg);
+}
+
+/* heading of services section */
+#serHead{
+    color: white;
+}
+
+/* services container div*/
+.container {
+    display: flex;
+}
+
+/* conatiner boxes */
+.box {
+    margin: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255); 
+    /* box-shadow: -32px -32px 128px 20px rgb(70, 37, 236) inset, 32px 32px 128px 20px rgb(207, 18, 138) inset; */
+    /* box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.531), 0 2px 8px 0 rgba(255, 255, 255, 0.457); */
+    box-shadow: 2px 2px 35px rgb(105, 103, 103);
+    height: 400px;
+}
+
+/* images inside the boxes */
+.box img {
+    display: block;
+    margin: auto;
+    height: 140px;
+    width: 125px;
+}
+
+.box img:hover {
+    transform: scale(1.2);
+}
+
+/* bulk ordering box image */
+#bulk{
+    display: block;
+    margin:auto;
+    height: 120px;
+    width:200px;
+}
+
+/* delivery order box image */
+#del{
+    display: block;
+    margin:auto;
+    height: 125px;
+    width:200px;
+}
+
+/* headings of sections */
+h2 {
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin: 25px;
+    top: 15px;
+}
+
+h3{
+    margin:15px;
+}
+
+/* for centering data of any section */
+.text-center {
+    text-align: center;
+}
+
+/* connect div */
+.connect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* logos of connect us section */
+.cItem{
+  cursor: pointer;
+}
+
+#dis{
+  height: 132px;
+}
+
+#twt{
+    height: 90px;
+    padding-right: 35px;
+}
+
+#fb{
+    height: 100px;
+}
+
+#lkd{
+height: 116px;
+padding-left: 20px;
+}
+
+/* contect us head */
+#contHead{
+    font-family: 'Bree Serif', serif;;
+}
+
+#contect-section::before{
+    content: "";
+    position: absolute;
+    background: url(./images/bg9.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+    height: 90%;
+    width: 100%;
+}
+
+/* contect us form */
+.frm{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+/* inputs in form */
+.inp{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 20px;
+    width: 430px;
+    margin: 10px;
+    padding: 8px;
+    text-align: center;
+    font-size: 25px;
+    background: transparent;
+}
+
+/* submit button of form */
+.subInp{
+    font-size: 20px;
+    color: white;
+    background-color: #db512b;
+    font-weight: bold;
+    height: 40px;
+    width: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.88;
+}
+.subInp:hover{
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid orangered;
+}
