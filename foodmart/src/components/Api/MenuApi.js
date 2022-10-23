@@ -132,7 +132,7 @@ const Menu = [
         image:"https://www.cubesnjuliennes.com/wp-content/uploads/2021/03/Best-Mutton-Biryani-Recipe.jpg",
         name:"Biryani-all",
         category:"Dinner",
-        price:105-120,
+        price:120,
         description:"You can go with chicken/motton biryani as your dinner and kill your hunger at the end of the day..."
     },
     {
