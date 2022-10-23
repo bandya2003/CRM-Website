@@ -1,0 +1,48 @@
+
+.border-btm{
+    border-bottom: 2px solid midnightblue;
+}
+
+.item-card{
+    width: 40%;
+    margin: 1.6% 0;
+    padding: .7%;
+    text-align: center;
+    background-color: #f4e0ff !important;
+}
+
+.card img{
+    width: 30vw;
+    margin: auto;
+    border: 1px solid midnightblue;
+    border-radius: 15px;
+}
+
+.card-top{
+    display: flex;
+    padding: .5rem 1.5rem;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: monospace;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.mid{
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: monospace;
+    color: midnightblue;
+    font-weight: 600;
+}
+
+.btn{
+    width: 25%;
+    background-color: blueviolet !important;
+}
+
+.btn :hover{
+    background-color: midnightblue !important;
+}
