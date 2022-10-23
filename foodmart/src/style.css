@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-card{
+    width: 82%;
+    margin: 2% auto;
+    display: flex;
+    padding: 2% 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-text{
+    text-align: left !important;
+}
+

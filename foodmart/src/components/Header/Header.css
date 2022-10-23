@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width: 32%;
+    margin: 1.3rem auto;
+}
+
+body{
+    background-color: #e3cfee !important;
+}
+
+.active{
+    border: 2px solid #e245e2 !important;
+    border-bottom: none !important;
+    background-color: #f5e2ff !important;
+}
