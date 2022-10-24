@@ -1,0 +1,38 @@
+<!Doctype Html>
+
+<Html>   
+
+<Head>    
+
+<Title>   
+
+Create a Login form 
+
+</Title>
+
+</Head>
+
+<Body> 
+
+The following tags are used in this Html code for creating the Login form:
+
+<form>
+
+<label>User Id: </label> <br>
+
+<input type="text"> <br> <br>
+
+<label>Password:</label> <br>
+
+<input type="password">  <br> <br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</Body> 
+
+</Html>
+
+ 
+
