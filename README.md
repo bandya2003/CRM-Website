@@ -40,15 +40,6 @@ You can sign up anytime between October 1 and October 31. Just be sure to sign u
   <img src="https://contrib.rocks/image?repo=bandya2003/CRM-Website" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
-
-
-
-
-
-
-
-
 
 ## Stats 📊
 ![Repo analysis](https://repobeats.axiom.co/api/embed/299153db22d9f4825188f8d39f48c65e82e9bfe3.svg "Repobeats analytics image")
