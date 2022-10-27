@@ -34,7 +34,13 @@ You can sign up anytime between October 1 and October 31. Just be sure to sign u
 * Last but not least, one pull request to fix a typo is fine, but 5 pull requests to remove a stray whitespace is not.
 
 
+## Contributors 🤝
 
+<a href="https://github.com/bandya2003/CRM-Website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=bandya2003/CRM-Website" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 
 
