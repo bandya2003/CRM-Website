@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <!-- box conatins all heading + includings -->
+        <div class="box">
+            <span class="heading">
+                Your Paaword Will Appear here
+            </span>
+            <!-- designing a row of heading at left  and input type at right -->
+            <!-- for length -->
+            <div class="row">
+                <div class="left">
+                    Password Length:
+                </div>
+                <div class="right">
+                    <input type="number" name="" id="total" max="30" min="4" value="10">
+                </div>
+            </div>
+            <!-- for uppercase -->
+<div class="row">
+    <label for="upper-case">
+        <div class="left">
+            Contains Uppercase
+        </div>
+    </label>
+    <div class="right">
+        <input type="checkbox" id="uppercase">
+    </div>
+</div>
+        <!-- for lowercase -->
+        <div class="row">
+            <label for="lower-case">
+                <div class="left">
+                    Contains Lowercase
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" id="lowercase">
+            </div>
+        </div>
+        <!-- for numbers  -->
+        <div class="row">
+            <label for="numbers">
+                <div class="left">
+                    Contains numbers
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" name="" id="numbers">
+            </div>
+        </div>
+        <!-- for symbols  -->
+        <div class="row">
+            <label for="symbols">
+                <div class="left">
+                    Contains symbols
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" name="" id="symbols">
+            </div>
+        </div>
+    <!-- for generating button  -->
+        <div class="row">
+        <button class="btn">Generate Now</button>
+    </div> 
+    <!-- ended box and main  -->
+    </div>
+    </div>
+</body>
+<script src="pass.js"></script>
+
+</html>
