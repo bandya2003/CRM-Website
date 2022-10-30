@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Employee Registration Form</title>
+</head>
+<body>
+ <div class="outer">
+ <h3 id="title" align="center">Employee Registration Form</h3>
+ <div class="inner">
+ <fieldset>
+ <legend>Enter Details</legend>
+ <form name="employeeReg" action="" method="post">
+ <table>
+ <tr>
+    <td>
+        <label>Employee ID</label>
+        </td>
+        <td>
+        <input type="text" name="eid" id="eid" />
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>Employee Name</label>
+        </td>
+        <td>
+        <input type="text" name="ename" id="ename" />
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>Gender</label>
+        </td>
+        <td>
+        <input type="radio" id="male" value="Male" 
+       name="gender" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="Female" 
+       name="gender" />
+        <label for="female">Female</label>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>Qualification</label>
+        </td>
+        <td>
+        <input type="text" name="qualification" id="qual" />
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <label>Mobile Number</label>
+        </td>
+        <td>
+        <input type="text" name="mobile" id="mobile" />
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>Email ID</label>
+        </td>
+        <td>
+        <input type="text" name="emailid" id="mail" />
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>City</label>
+        </td>
+        <td>
+        <select id="city" name="city">
+        <option value=""></option>
+        <option value="Surat">Surat</option>
+        <option value="Ahemdabad">Ahemdabad</option>
+        <option value="Rajkot">Rajkot</option>
+        <option value="Vadodara">Vadodara</option>
+        </select>
+        </td>
+        </tr>
+        </table>
+        <div class="buttons">
+        <input type="submit" value="Insert" id="ins" name="insert" 
+       onclick="employeeReg.action='insert.php';this.form.target='_blank';"/>
+        <input type="submit" value="Update" id="upd" 
+       name="update" 
+       onclick="employeeReg.action='update.php';this.form.target='_blank';" />
+        <input type="submit" value="Delete" id="del" name="delete" 
+       onclick="employeeReg.action='delete.php';this.form.target='_blank';" />
+       <input type="submit" value="Display/View" id="view" 
+       name="view" 
+       onclick="employeeReg.action='display.php';this.form.target='_blank';" />
+        </div>
+        </form>
+        </fieldset>
+        </div>
+        </div>
+       </body>
+       </html>              
